@@ -9,7 +9,7 @@ class OEmbed
       end
 
       def format(txt)
-        ::JSON.parse(txt)
+        ::JSON.parse(txt) rescue nil
       end
       
     end
